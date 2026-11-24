@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.1
+
+- POM metadata: the developer is CryptaCount, Inc. with no e-mail address.
+- Signed with the release key 92C998CD6DFEEDBB0B3CA44A8AA7BDAEF292AD0C ("CryptaCount, Inc."), certified by the previous key 342E632911247F1D9137E30D5CA64DBDE5CF228A.
+- No code or API change; same behaviour as 0.2.0 (User-Agent reports 0.2.1).
+
 ## 0.2.0
 
 - POM metadata: organization and developer are CryptaCount, Inc. (the copyright and licence holder, as in LICENSE).

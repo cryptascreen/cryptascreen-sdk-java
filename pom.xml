@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.cryptascreen</groupId>
     <artifactId>cryptascreen-sdk</artifactId>
-    <version>0.2.0</version>
+    <version>0.2.1</version>
     <packaging>jar</packaging>
     <name>CryptaScreen SDK</name>
     <description>Official Java SDK for the CryptaScreen API</description>
@@ -25,7 +25,6 @@
     <developers>
         <developer>
             <name>CryptaCount, Inc.</name>
-            <email>support@cryptacount.com</email>
             <organization>CryptaCount, Inc.</organization>
             <organizationUrl>https://cryptascreen.com</organizationUrl>
         </developer>

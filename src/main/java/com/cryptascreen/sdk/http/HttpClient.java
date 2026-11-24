@@ -31,7 +31,7 @@ import java.util.stream.Collectors;
  */
 public final class HttpClient {
 
-    private static final Map<String, String> VERSION_HEADER = Map.of("User-Agent", "cryptascreen-sdk-java/0.2.0");
+    private static final Map<String, String> VERSION_HEADER = Map.of("User-Agent", "cryptascreen-sdk-java/0.2.1");
     private static final List<String> PLAN_LIMIT_CODES = List.of("SEAT_LIMIT_REACHED", "API_KEY_LIMIT_REACHED",
             "MONITORED_WALLET_LIMIT_REACHED", "BULK_LIMIT_REACHED", "feature_not_in_plan");
 
