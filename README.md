@@ -2,12 +2,12 @@
 
 Official Java SDK for the [CryptaScreen API](https://github.com/cryptascreen/cryptascreen-sdk-java#readme) — address and name screening, sanctions, wallet exposure, investigations, webhooks.
 
-Same API surface as [`@cryptascreen/sdk`](https://github.com/cryptascreen/cryptascreen-sdk-typescript) 0.2.2 (every method maps 1:1; `com.cryptascreen.sdk.Operations.ALL` lists each one with its HTTP method and path).
+Same API surface as the [TypeScript SDK](https://github.com/cryptascreen/cryptascreen-sdk-typescript) (`com.cryptascreen.sdk.Operations.ALL` lists each one with its HTTP method and path).
 
 ## Requirements
 
 - Supported Java versions: 17, 21, 23, 25 (tested in CI).
-- Jackson 2.21.7 (pulled in transitively)
+- Jackson 2.23 (pulled in transitively)
 
 ## Installation
 
@@ -17,17 +17,15 @@ Same API surface as [`@cryptascreen/sdk`](https://github.com/cryptascreen/crypta
 <dependency>
     <groupId>com.cryptascreen</groupId>
     <artifactId>cryptascreen-sdk</artifactId>
-    <version>0.1.0</version>
+    <version>0.2.1</version>
 </dependency>
 ```
 
 ### Gradle
 
 ```groovy
-implementation 'com.cryptascreen:cryptascreen-sdk:0.1.0'
+implementation 'com.cryptascreen:cryptascreen-sdk:0.2.1'
 ```
-
-> Not published yet: until the first release, build and install from a local checkout (`mvn install`).
 
 ## Quick Start
 
@@ -53,7 +51,7 @@ fields are snake_case on the wire and in the record).
 ```java
 CryptaScreen.builder()
         .apiKey("csk_...")                      // required
-        .baseUrl("http://localhost:8081")       // optional: a local stack or a proxy
+        .baseUrl("http://localhost:8081")       // optional: for example a proxy
         .connectTimeout(Duration.ofSeconds(10))
         .requestTimeout(Duration.ofSeconds(30))
         .maxRetries(3)
@@ -207,12 +205,9 @@ the `Retry-After` header (integer seconds) when present, otherwise `retryBaseDel
 ## Development
 
 ```bash
-mvn -B verify                       # compile + unit tests (contract tests skip without a local stack)
+mvn -B verify
 mvn -B package javadoc:jar   # jar + sources jar (attached by the pom) + javadoc jar
 ```
-
-Contract tests (`contract/LocalStackContractTest`) run against a LOCAL CryptaScreen stack only (`CS_CONTRACT_US`, `CS_CONTRACT_EU`,
-`CS_CONTRACT_KEY_US`, `CS_CONTRACT_KEY_EU`, `CS_CONTRACT_KEY_RL`); never against production.
 
 ## License
 
