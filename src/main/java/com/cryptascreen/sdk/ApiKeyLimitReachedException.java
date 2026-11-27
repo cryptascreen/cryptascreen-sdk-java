@@ -1,3 +1,5 @@
+// Copyright (c) 2024-2026 CryptaCount, Inc.
+// SPDX-License-Identifier: MIT
 package com.cryptascreen.sdk;
 
 /** Thrown on 403 {@code API_KEY_LIMIT_REACHED}: the plan's API-key count is reached. */

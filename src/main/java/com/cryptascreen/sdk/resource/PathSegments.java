@@ -1,3 +1,5 @@
+// Copyright (c) 2024-2026 CryptaCount, Inc.
+// SPDX-License-Identifier: MIT
 package com.cryptascreen.sdk.resource;
 
 import java.net.URLEncoder;

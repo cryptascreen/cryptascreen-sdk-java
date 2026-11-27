@@ -1,3 +1,5 @@
+// Copyright (c) 2024-2026 CryptaCount, Inc.
+// SPDX-License-Identifier: MIT
 package com.cryptascreen.sdk;
 
 /** Thrown on 403 {@code SEAT_LIMIT_REACHED}: all user seats of the plan are taken. */
